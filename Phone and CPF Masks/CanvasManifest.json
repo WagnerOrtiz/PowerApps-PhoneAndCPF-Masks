@@ -84,11 +84,11 @@
     "Id": "eaa88978-a060-4988-a0a3-81f3a975cde5",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Learn - Mascara de Telefone",
+    "Name": "Learn - Mascara de CPF e Telefone",
     "OriginatingVersion": "1.324"
   },
   "PublishInfo": {
-    "AppName": "Learn - Mascara de Telefone",
+    "AppName": "Learn - Mascara de CPF e Telefone",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
