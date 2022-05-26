@@ -1,0 +1,91 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Atencao": 11,
+    "Button1": 4,
+    "CPF_Icon": 13,
+    "CPF_Mask": 12,
+    "CPF_Slider": 15,
+    "CPF_With_Mask": 14,
+    "CPFGroup": 16,
+    "Home": 3,
+    "Masks": 5,
+    "Phone_Input_With_Mask_1": 7,
+    "Phone_Mask_2": 9,
+    "Phone_Slider_2": 8,
+    "PhoneGroup": 10,
+    "PhoneIcon_1": 6
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "05/26/2022 14:29:38",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "CPF_Collection": 1,
+    "phoneCollection": 0
+  },
+  "OrderGroupControls": {
+    "CPFGroup": {
+      "CPF_Icon": 1,
+      "CPF_Mask": 0,
+      "CPF_Slider": 3,
+      "CPF_With_Mask": 2
+    },
+    "PhoneGroup": {
+      "Phone_Input_With_Mask_1": 2,
+      "Phone_Mask_2": 0,
+      "Phone_Slider_2": 3,
+      "PhoneIcon_1": 1
+    }
+  },
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 0,
+    "icon": 1,
+    "label": 4,
+    "slider": 3,
+    "text": 2
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Atencao": 11,
+    "Button1": 0,
+    "CPF_Icon": 7,
+    "CPF_Mask": 10,
+    "CPF_Slider": 9,
+    "CPF_With_Mask": 8,
+    "CPFGroup": 6,
+    "Home": 0,
+    "Masks": 0,
+    "Phone_Input_With_Mask_1": 3,
+    "Phone_Mask_2": 5,
+    "Phone_Slider_2": 4,
+    "PhoneGroup": 1,
+    "PhoneIcon_1": 2
+  },
+  "ResourcesJsonIndices": {},
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1222182,
+    "ControlCount": {
+      "button": 1,
+      "group": 2,
+      "icon": 2,
+      "screen": 2,
+      "slider": 2,
+      "text": 4
+    },
+    "DeserializationLoadTime": 0.3498849,
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}

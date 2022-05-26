@@ -1,0 +1,13 @@
+Home As screen:
+    OnVisible: =
+
+    Button1 As button:
+        Height: =100
+        OnSelect: =Navigate(Masks)
+        Size: =24
+        Text: ="Carregar PhoneMask"
+        Width: =382
+        X: =144
+        Y: =464
+        ZIndex: =5
+

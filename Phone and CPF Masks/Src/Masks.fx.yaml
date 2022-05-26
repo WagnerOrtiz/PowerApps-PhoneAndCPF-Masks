@@ -1,0 +1,213 @@
+Masks As screen:
+    OnVisible: |-
+        =Set(phoneFormatado, Blank());
+        Clear(phoneCollection);
+        Clear(CPF_Collection);
+        
+        ForAll(
+            Sequence(Len(Phone_Mask_2.Text)),
+            Collect(
+                phoneCollection,
+                {numCaracter: CountRows(MatchAll(Left(Phone_Mask_2.Text,Value), "#")),
+                formatarAssim: Left(Phone_Mask_2.Text,Value)}
+            )
+        );
+        
+        ForAll(
+            Sequence(Len(CPF_Mask.Text)),
+            Collect(
+                CPF_Collection,
+                {numCaracter: CountRows(MatchAll(Left(CPF_Mask.Text,Value), "#")),
+                formatarAssim: Left(CPF_Mask.Text,Value)}
+            )
+        );
+
+    Atencao As label:
+        Height: =165
+        Size: =25
+        Text: ="Atentar ao conteúdo do OnVisible dessa Screen, pois ele é setado quando se clica no botão localizadona ""Home"""
+        Width: =594
+        X: =40
+        Y: =948
+        ZIndex: =2
+
+    PhoneGroup As group:
+        Height: =5
+        Width: =5
+        X: =6
+        Y: =-239
+        ZIndex: =5
+
+        Phone_Mask_2 As text:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            Default: |-
+                ="(##) #####-####"
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FontWeight: =FontWeight.Bold
+            Height: =111
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnChange: =
+            PressedBorderColor: =
+            PressedColor: =RGBA(255, 255, 0, 1)
+            PressedFill: =
+            Size: =18
+            Width: =276
+            X: =223
+            Y: =250
+            ZIndex: =3
+
+        PhoneIcon_1 As icon.Phone:
+            Color: =RGBA(39, 67, 125, 1)
+            Icon: =Icon.Phone
+            X: =40
+            Y: =56
+            ZIndex: =4
+
+        Phone_Input_With_Mask_1 As text:
+            BorderColor: =RGBA(50, 86, 160, 1)
+            Default: =phoneFormatado
+            DisabledBorderColor: =RGBA(50, 86, 160, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            HintText: ="Telefone"
+            HoverBorderColor: =RGBA(50, 86, 160, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            MaxLength: =15
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =21
+            Width: =483
+            X: =120
+            Y: =62
+            ZIndex: =5
+
+        Phone_Slider_2 As slider:
+            Default: =Len(Phone_Input_With_Mask_1.Text)
+            Height: =70
+            OnChange: |-
+                =Set(phoneFormatado,
+                    With({ 
+                        textoSomentenumeros:Concat(MatchAll(Phone_Input_With_Mask_1.Text, Match.Digit), FullMatch)
+                        },
+                        Substitute(
+                            Text(
+                                Value(
+                                    textoSomentenumeros
+                                ),
+                                LookUp(
+                                    phoneCollection,
+                                    Len(textoSomentenumeros) = Value(numCaracter)
+                                ).formatarAssim
+                            ),
+                            "_","."
+                        )
+                    )
+                );
+                
+                Reset(Phone_Input_With_Mask_1)
+            Width: =469
+            X: =120
+            Y: =171
+            ZIndex: =9
+
+    CPFGroup As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =10
+
+        CPF_Mask As text:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            Default: |-
+                ="###_###_###-##"
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FontWeight: =FontWeight.Bold
+            Height: =111
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnChange: =
+            PressedBorderColor: =
+            PressedColor: =RGBA(255, 255, 0, 1)
+            PressedFill: =
+            Size: =18
+            Width: =276
+            X: =229
+            Y: =711
+            ZIndex: =1
+
+        CPF_Icon As icon.Phone:
+            Color: =RGBA(39, 67, 125, 1)
+            Icon: =Icon.DocumentWithContent
+            X: =46
+            Y: =517
+            ZIndex: =6
+
+        CPF_With_Mask As text:
+            BorderColor: =RGBA(50, 86, 160, 1)
+            Default: =CPF_Formatado
+            DisabledBorderColor: =RGBA(50, 86, 160, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            HintText: ="CPF"
+            HoverBorderColor: =RGBA(50, 86, 160, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            MaxLength: =14
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =21
+            Width: =483
+            X: =126
+            Y: =523
+            ZIndex: =7
+
+        CPF_Slider As slider:
+            Default: =Len(CPF_With_Mask.Text)
+            Height: =70
+            OnChange: |-
+                =Set(CPF_Formatado,
+                    With({ 
+                        textoSomentenumeros:Concat(MatchAll(CPF_With_Mask.Text, Match.Digit), FullMatch)
+                        },
+                        Substitute(
+                            Text(
+                                Value(
+                                    textoSomentenumeros
+                                ),
+                                LookUp(
+                                    CPF_Collection,
+                                    Len(textoSomentenumeros) = Value(numCaracter)
+                                ).formatarAssim
+                            ),
+                            "_","."
+                        )
+                    )
+                );
+                
+                Reset(CPF_With_Mask)
+            Width: =469
+            X: =126
+            Y: =632
+            ZIndex: =8
+
