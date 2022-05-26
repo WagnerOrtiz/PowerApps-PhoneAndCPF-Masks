@@ -19,7 +19,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/26/2022 14:29:38",
+  "HeaderLastSavedDateTimeUTC": "05/26/2022 14:36:53",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -65,11 +65,11 @@
     "CPFGroup": 6,
     "Home": 0,
     "Masks": 0,
-    "Phone_Input_With_Mask_1": 3,
+    "Phone_Input_With_Mask_1": 2,
     "Phone_Mask_2": 5,
-    "Phone_Slider_2": 4,
-    "PhoneGroup": 1,
-    "PhoneIcon_1": 2
+    "Phone_Slider_2": 3,
+    "PhoneGroup": 4,
+    "PhoneIcon_1": 1
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
@@ -78,11 +78,11 @@
     "AnalysisLoadTime": 0.1222182,
     "ControlCount": {
       "button": 1,
-      "group": 2,
-      "icon": 2,
+      "group": 3,
+      "icon": 3,
       "screen": 2,
-      "slider": 2,
-      "text": 4
+      "slider": 3,
+      "text": 6
     },
     "DeserializationLoadTime": 0.3498849,
     "ErrorCount": 0

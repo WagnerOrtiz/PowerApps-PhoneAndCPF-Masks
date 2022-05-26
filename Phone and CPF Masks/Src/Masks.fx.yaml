@@ -23,12 +23,13 @@ Masks As screen:
         );
 
     Atencao As label:
-        Height: =165
+        FontWeight: =FontWeight.Semibold
+        Height: =232
         Size: =25
-        Text: ="Atentar ao conteúdo do OnVisible dessa Screen, pois ele é setado quando se clica no botão localizadona ""Home"""
+        Text: ="Atentar ao conteúdo do OnVisible dessa Screen, pois ele é setado quando se clica no botão localizadona ""Home"". Existe collect para cada máscara."
         Width: =594
         X: =40
-        Y: =948
+        Y: =880
         ZIndex: =2
 
     PhoneGroup As group:
@@ -40,6 +41,7 @@ Masks As screen:
 
         Phone_Mask_2 As text:
             BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =0
             Color: =RGBA(255, 0, 0, 1)
             Default: |-
                 ="(##) #####-####"
@@ -48,7 +50,7 @@ Masks As screen:
             DisabledFill: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(0, 0, 0, 0)
             FontWeight: =FontWeight.Bold
-            Height: =111
+            Height: =56
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
@@ -59,18 +61,18 @@ Masks As screen:
             Size: =18
             Width: =276
             X: =223
-            Y: =250
+            Y: =142
             ZIndex: =3
 
         PhoneIcon_1 As icon.Phone:
             Color: =RGBA(39, 67, 125, 1)
             Icon: =Icon.Phone
             X: =40
-            Y: =56
+            Y: =26
             ZIndex: =4
 
         Phone_Input_With_Mask_1 As text:
-            BorderColor: =RGBA(50, 86, 160, 1)
+            BorderThickness: =1
             Default: =phoneFormatado
             DisabledBorderColor: =RGBA(50, 86, 160, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
@@ -89,7 +91,7 @@ Masks As screen:
             Size: =21
             Width: =483
             X: =120
-            Y: =62
+            Y: =32
             ZIndex: =5
 
         Phone_Slider_2 As slider:
@@ -118,7 +120,7 @@ Masks As screen:
                 Reset(Phone_Input_With_Mask_1)
             Width: =469
             X: =120
-            Y: =171
+            Y: =102
             ZIndex: =9
 
     CPFGroup As group:
@@ -138,7 +140,7 @@ Masks As screen:
             DisabledFill: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(0, 0, 0, 0)
             FontWeight: =FontWeight.Bold
-            Height: =111
+            Height: =68
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
@@ -148,15 +150,15 @@ Masks As screen:
             PressedFill: =
             Size: =18
             Width: =276
-            X: =229
-            Y: =711
+            X: =222
+            Y: =460
             ZIndex: =1
 
         CPF_Icon As icon.Phone:
             Color: =RGBA(39, 67, 125, 1)
             Icon: =Icon.DocumentWithContent
-            X: =46
-            Y: =517
+            X: =39
+            Y: =331
             ZIndex: =6
 
         CPF_With_Mask As text:
@@ -178,8 +180,8 @@ Masks As screen:
             RadiusTopRight: =10
             Size: =21
             Width: =483
-            X: =126
-            Y: =523
+            X: =119
+            Y: =337
             ZIndex: =7
 
         CPF_Slider As slider:
@@ -207,7 +209,7 @@ Masks As screen:
                 
                 Reset(CPF_With_Mask)
             Width: =469
-            X: =126
-            Y: =632
+            X: =119
+            Y: =407
             ZIndex: =8
 
