@@ -1,8 +1,25 @@
 {
   "ComponentIndexes": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Atencao": 14,
+    "Button1": 4,
+    "CPF_Icon": 10,
+    "CPF_Mask": 13,
+    "CPF_Slider": 12,
+    "CPF_With_Mask": 11,
+    "CPFGroup": 16,
+    "Home": 3,
+    "Masks": 5,
+    "Phone_Input_With_Mask_1": 7,
+    "Phone_Mask_2": 9,
+    "Phone_Slider_2": 8,
+    "PhoneGroup": 15,
+    "PhoneIcon_1": 6
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "05/26/2022 14:55:53",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -10,13 +27,66 @@
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
-  "OrderGroupControls": {},
+  "OrderDataSource": {
+    "CPF_Collection": 0,
+    "phoneCollection": 1
+  },
+  "OrderGroupControls": {
+    "CPFGroup": {
+      "CPF_Icon": 1,
+      "CPF_Mask": 0,
+      "CPF_Slider": 3,
+      "CPF_With_Mask": 2
+    },
+    "PhoneGroup": {
+      "Phone_Input_With_Mask_1": 2,
+      "Phone_Mask_2": 0,
+      "Phone_Slider_2": 3,
+      "PhoneIcon_1": 1
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "PublishOrderIndices": {},
+  "OrderXMLTemplate": {
+    "button": 0,
+    "icon": 1,
+    "label": 4,
+    "slider": 3,
+    "text": 2
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Atencao": 13,
+    "Button1": 3,
+    "CPF_Icon": 9,
+    "CPF_Mask": 12,
+    "CPF_Slider": 11,
+    "CPF_With_Mask": 10,
+    "CPFGroup": 15,
+    "Home": 2,
+    "Masks": 4,
+    "Phone_Input_With_Mask_1": 6,
+    "Phone_Mask_2": 8,
+    "Phone_Slider_2": 7,
+    "PhoneGroup": 14,
+    "PhoneIcon_1": 5
+  },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1476006,
+    "ControlCount": {
+      "button": 1,
+      "group": 2,
+      "icon": 2,
+      "label": 1,
+      "screen": 2,
+      "slider": 2,
+      "text": 4
+    },
+    "DeserializationLoadTime": 1.9233269,
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }

@@ -1,6 +1,7 @@
 Masks As screen:
     OnVisible: |-
         =Set(phoneFormatado, Blank());
+        Set(CPF_Formatado, Blank());
         Clear(phoneCollection);
         Clear(CPF_Collection);
         
